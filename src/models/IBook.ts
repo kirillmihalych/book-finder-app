@@ -1,12 +1,22 @@
+export interface IBooks {
+  items: IBook[]
+}
+
 export interface IBook {
   id: string
   selfLink: string
   volumeInfo: IVolumeInfo
-  imageLinks: string
 }
 
 interface IVolumeInfo {
   title: string
   authors: string[]
   description: string
+  imageLinks: IImageLinks
+  previewLink: string
+}
+
+interface IImageLinks {
+  smallThumbnail: string
+  thumbnail: string
 }

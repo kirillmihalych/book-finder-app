@@ -14,3 +14,9 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.search-form-section {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
